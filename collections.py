@@ -39,3 +39,22 @@ print(d)
 
 #not really sure what this container is for, will come back later once fully understood
 
+#TYPE 4: CHAIN_MAP
+
+d1 = {'A': 1, 'B': 2, 'C': 3}
+d2 = {'D': 4, 'E': 5, 'F': 6}
+d3 = {'G': 7, 'H': 8, 'I': 9}
+
+c = ChainMap(d1, d2, d3)
+
+d4 = {'J': 10}
+
+print(c)
+
+chain2 = c.new_child(d4)
+
+print(chain2)
+
+#ChainMap combines two or more dictionary into a dictionary of dictionaries
+#its functionality is practically the same as a normal dictionary; you can call keys and values just like you normally would
+#the .new_child() function creates a new ChainMap using the one it's called on, adding to the beginning the dictionary passed in as a parameter
