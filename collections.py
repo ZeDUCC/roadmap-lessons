@@ -25,3 +25,17 @@ for key, value in od.items(): #OrderedDict items need to be printed using the .i
 
 #an OrderedDict works like a regular Dictionary; the only difference is that it keeps track of the order in which each key-value pair was added
 #so, the A that I popped and re-added in lines 20-21 was taken out and then appended to the end of the dictionary, rather than bringing it back to the front, where it was originally
+
+#TYPE 3: DEFAULT_DICT
+
+d = defaultdict(int) #initializes a DefaultDict object that will be filled with only variables of the int type
+
+L = [1, 2, 3, 4, 2, 4, 1, 2]
+
+for i in L:
+    d[i] += 1
+
+print(d)
+
+#not really sure what this container is for, will come back later once fully understood
+
