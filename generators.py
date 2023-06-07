@@ -25,4 +25,12 @@ y = map(lambda i: i**2, list)
 # the map function takes a data structure (in our case the list from above) and maps all of them to a function, in this case our lambda function 
 # the thing about the map function is that it doesn't create a new list that contains all of those function calls; the map() function is actually a generator
 
-print(list(y))
+# what a for loop really does is that it calls a special method on all of the iterator objects that gives us the next item in the sequence that we're looping through
+
+print(next(y))
+print(next(y))
+
+for i in y:
+    print(i) # starts at the third value because of the next() calls above
+
+# what the for loop does is that it calls the next() function on an iterator object
