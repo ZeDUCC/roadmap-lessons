@@ -34,3 +34,5 @@ for i in y:
     print(i) # starts at the third value because of the next() calls above
 
 # what the for loop does is that it calls the next() function on an iterator object
+
+# RESUME AT 11:52
